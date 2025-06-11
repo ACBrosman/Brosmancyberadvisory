@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Brosman Cybersecurity Advisory</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Brosman Cybersecurity Advisory</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="test.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Hero Section -->
+      <section class="contact-hero">
+        <div class="hero-content">
+          <h1>Get Expert Cybersecurity Guidance</h1>
+          <p>Ready to strengthen your security posture? Contact Brosman Cybersecurity Advisory for a confidential consultation about your organization's security challenges.</p>
+        </div>
+      </section>
+
+      <!-- Contact Form and Info Section -->
+      <section class="contact-main">
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <h2>Schedule Your Consultation</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours to discuss your cybersecurity needs.</p>
+            
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company/Organization *</label>
+                <input type="text" id="company" name="company" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="title">Job Title</label>
+                  <input type="text" id="title" name="title">
+                </div>
+                <div class="form-group">
+                  <label for="companySize">Company Size</label>
+                  <select id="companySize" name="companySize">
+                    <option value="">Select size</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-200">51-200 employees</option>
+                    <option value="201-1000">201-1000 employees</option>
+                    <option value="1000+">1000+ employees</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="services">Services of Interest</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="risk-assessment">
+                    <span class="checkmark"></span>
+                    Security Risk Assessment & Strategy
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="penetration-testing">
+                    <span class="checkmark"></span>
+                    Penetration Testing Advisory
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="data-protection">
+                    <span class="checkmark"></span>
+                    Data Protection & Privacy Advisory
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="network-security">
+                    <span class="checkmark"></span>
+                    Network Security Architecture
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="compliance">
+                    <span class="checkmark"></span>
+                    Compliance & Regulatory Advisory
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="secure-development">
+                    <span class="checkmark"></span>
+                    Secure Development Advisory
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="virtual-ciso">
+                    <span class="checkmark"></span>
+                    Virtual CISO Services
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="urgency">Project Urgency</label>
+                <select id="urgency" name="urgency">
+                  <option value="">Select urgency</option>
+                  <option value="immediate">Immediate (within 1 week)</option>
+                  <option value="urgent">Urgent (within 1 month)</option>
+                  <option value="planned">Planned (within 3 months)</option>
+                  <option value="future">Future consideration (3+ months)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Estimated Budget Range</label>
+                <select id="budget" name="budget">
+                  <option value="">Select budget range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-15k">$5,000 - $15,000</option>
+                  <option value="15k-50k">$15,000 - $50,000</option>
+                  <option value="50k-100k">$50,000 - $100,000</option>
+                  <option value="100k+">$100,000+</option>
+                  <option value="ongoing">Ongoing retainer</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell us about your security challenges *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Please describe your current security concerns, specific challenges you're facing, or what you'd like to accomplish with our advisory services..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" value="yes">
+                  <span class="checkmark"></span>
+                  Subscribe to our cybersecurity insights newsletter
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="contact-info-section">
+            <div class="contact-info-card">
+              <h3>Contact Information</h3>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>info@brosmancyber.com</p>
+                  <p class="contact-note">We respond within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                  <p class="contact-note">Mon-Fri, 9 AM - 6 PM EST</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Schedule a Call</h4>
+                  <p>Book a 30-minute consultation</p>
+                  <a href="#" class="schedule-link">Schedule Now</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Emergency Response</h4>
+                  <p>24/7 incident response hotline</p>
+                  <p class="emergency-number">+1 (555) 911-CYBER</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Response Time Card -->
+            <div class="response-time-card">
+              <h3>What to Expect</h3>
+              <div class="timeline-item">
+                <div class="timeline-icon">1</div>
+                <div class="timeline-content">
+                  <h4>Initial Response</h4>
+                  <p>We'll acknowledge your inquiry within 4 hours during business days</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">2</div>
+                <div class="timeline-content">
+                  <h4>Consultation Call</h4>
+                  <p>Schedule a detailed discussion about your security needs within 24-48 hours</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">3</div>
+                <div class="timeline-content">
+                  <h4>Proposal</h4>
+                  <p>Receive a customized proposal within 3-5 business days</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-indicators">
+              <h3>Why Choose Brosman?</h3>
+              <div class="trust-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Certified Security Professionals</span>
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-lock"></i>
+                <span>Confidential & Secure Communications</span>
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-handshake"></i>
+                <span>No Obligation Consultations</span>
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-clock"></i>
+                <span>Rapid Response Times</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="contact-faq">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about our advisory services and engagement process</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How quickly can you start an engagement?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>For most advisory services, we can begin within 1-2 weeks of contract signing. Emergency incident response services are available 24/7 with immediate response capabilities.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you work with small businesses or only enterprises?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We work with organizations of all sizes, from small businesses to large enterprises. Our advisory services are tailored to match your organization's size, complexity, and budget.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What information do you need to provide a quote?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We typically need to understand your organization size, current security posture, specific challenges, desired outcomes, and timeline. A brief consultation call helps us provide an accurate proposal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you sign NDAs and confidentiality agreements?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely. We understand the sensitive nature of cybersecurity work and are happy to sign NDAs and other confidentiality agreements before any detailed discussions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can you provide references from similar organizations?</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we can provide references from clients in similar industries or with comparable security challenges, subject to their approval and our confidentiality agreements.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Brosman Cybersecurity Advisory. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Simple form validation and FAQ toggle functionality
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Basic form validation
+      const requiredFields = this.querySelectorAll('[required]');
+      let isValid = true;
+      
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          field.style.borderColor = '#e74c3c';
+          isValid = false;
+        } else {
+          field.style.borderColor = '#ddd';
+        }
+      });
+      
+      if (isValid) {
+        // Show success message (in a real implementation, you'd send the data to a server)
+        alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+        this.reset();
+      } else {
+        alert('Please fill in all required fields.');
+      }
+    });
+
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = this.querySelector('i');
+        
+        faqItem.classList.toggle('active');
+        
+        if (faqItem.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          answer.style.maxHeight = '0';
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
